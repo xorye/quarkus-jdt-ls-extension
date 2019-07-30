@@ -31,13 +31,13 @@ public class SampleDelegateCommandHandler implements IDelegateCommandHandler {
             
             ///////////////////////////////////////////////////
             // This is what I think Fred wanted me to try out
-            GsonBuilder builder = new GsonBuilder();
-            Gson gson = builder.create();
-            Metadata[] metadata = gson.fromJson(metadataString, Metadata[].class);
+            // GsonBuilder builder = new GsonBuilder();
+            // Gson gson = builder.create();
+            // Metadata[] metadata = gson.fromJson(metadataString, Metadata[].class);
             ///////////////////////////////////////////////////
             
             // Tells VSCode to execute a command with specified parameters
-            connection.executeClientCommand(command, metadata);
+            connection.executeClientCommand(command, metadataString);
             
             return "Done";
             
