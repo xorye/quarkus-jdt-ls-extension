@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: jdt.ls.quarkus Core Extension
+Bundle-SymbolicName: jdt.ls.quarkus.core;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Activator: com.redhat.jdtls.quarkus.jdt.ls.quarkus.core.internal.ExtensionActivator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jdt.ls.core
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.google.gson
